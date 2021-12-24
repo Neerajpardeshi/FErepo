@@ -1,0 +1,22 @@
+<div>
+    {{message}}
+</div>
+<h3>Login</h3>
+<form>
+    <table>
+        <tbody>
+            <tr>
+                <td>Enter Admin Id:</td>
+                <td><input type="text" name="adminId" [(ngModel)]="adminId"></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+                <td><input type="password" name="password" [(ngModel)]="password"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <input type="button" value="Login" (click)="authenticateNow()">
+    </div>
+</form>
+

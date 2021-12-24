@@ -1,0 +1,25 @@
+<h1>Employee Assessment Score</h1>
+<table border="1px solid black">
+    <thead>
+        <th>Employee Id</th>
+        <th>Java</th>
+        <th>Spring</th>
+        <th>Python</th>
+        <th>Javascript</th>
+        <th>Datastructure</th>
+        <th>Update record</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emps of emps">
+            <td>{{emps.empid}}</td>
+            <td>{{emps.java}}</td>
+            <td>{{emps.spring}}</td>
+            <td>{{emps.python}}</td>
+            <td>{{emps.javascript}}</td>
+            <td>{{emps.datastructure}}</td>
+
+            <td><input type="button" value="Update" (click)="updateScore(emps) "></td>
+        
+        </tr>
+    </tbody>
+</table>
